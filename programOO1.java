@@ -1,5 +1,5 @@
 
-class program51
+class program001
 {
     public static void main(String A[])
     {
@@ -7,5 +7,3 @@ class program51
     }
 }
 
-// Compile :    javac program51.java
-// Run :        java program51
