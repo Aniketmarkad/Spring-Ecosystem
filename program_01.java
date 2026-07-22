@@ -1,5 +1,5 @@
 
-class 001program
+class program_01
 {
     public static void main(String A[])
     {
