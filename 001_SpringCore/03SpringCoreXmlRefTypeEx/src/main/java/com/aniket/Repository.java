@@ -4,7 +4,6 @@ public class Repository {
 
 	private String entity;
 	
-	//alt+shift+S  O  > Deselect All > Generate
 	public Repository() {
 		super();
 	}
