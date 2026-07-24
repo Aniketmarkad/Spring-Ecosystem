@@ -1,0 +1,30 @@
+package com.aniket;
+
+import java.util.Random;
+
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
+//@Component("t1")
+//@Scope("prototype")
+public class Token 
+{
+
+	private int code;
+
+	public Token() 
+	{
+		super();
+		System.out.println("const is called");
+		code = Math.abs(new Random().nextInt());
+		
+	}
+
+	@Override
+	public String toString() 
+	{
+		return "Token [code=" + code + "]";
+	}
+		
+	
+}
