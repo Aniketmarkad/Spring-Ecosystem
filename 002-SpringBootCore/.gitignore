@@ -1,0 +1,36 @@
+# Maven
+**/target/
+
+# Eclipse
+**/.project
+**/.classpath
+**/.settings/
+**/.factorypath
+**/.apt_generated/
+**/.springBeans
+
+# IntelliJ IDEA
+**/.idea/
+**/*.iml
+
+# VS Code
+**/.vscode/
+
+# Spring Tool Suite
+**/.sts4-cache/
+
+# Java
+**/*.class
+
+# Logs
+**/*.log
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Keep Maven Wrapper
+!**/.mvn/
+!**/mvnw
+!**/mvnw.cmd
