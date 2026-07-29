@@ -1,0 +1,34 @@
+my:
+  db:
+    driver: Oracle
+    pwd: aniket
+    url: jdbc-oracle_default
+    user: anii
+---
+spring:
+  config:
+    activate:
+      on-profile:
+      - prod
+      - prodps
+    
+my:
+  db:
+    driver: MySQL
+    pwd: aniket
+    url: jdbc-mysql_from_prod
+    user: anii
+---
+spring:
+  config:
+    activate:
+      on-profile:
+      - qa
+      - uat
+  
+my:
+  db:
+    driver: Postgress
+    pwd: aniket
+    url: jdbc-psg_from_qa
+    user: anii   
