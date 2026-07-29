@@ -1,0 +1,17 @@
+my:
+  app:
+   cobj:
+     provider: GoDaddy
+     expExiSt: INACTIVE
+   host: smtp.gmail.com
+   port: 885
+   username: sample
+   password: ashok 
+   protocol:
+    - SMPT
+    - SMTPS
+    - SMTP2
+   headers:
+    modified: true
+    version: 3.2A
+    content: json					
