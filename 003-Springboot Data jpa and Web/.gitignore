@@ -1,0 +1,14 @@
+# Build
+**/target/
+
+# Eclipse / STS
+**/.project
+**/.classpath
+**/.settings/
+
+# IntelliJ
+**/.idea/
+**/*.iml
+
+# VS Code
+**/.vscode/
