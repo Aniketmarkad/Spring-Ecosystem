@@ -27,7 +27,7 @@ public class StudentController {
 	@GetMapping("/register")
 	public String showPage (Model model)
 	{
-		model.addAttribute("Msg","hello from Aniket  registration form");
+		model.addAttribute("Msg","WELCOME TO REGISTERATION  PAGE");
 		return "StudentRegister";	
 	}
 	

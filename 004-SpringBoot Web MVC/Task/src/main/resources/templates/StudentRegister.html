@@ -2,30 +2,52 @@
 <head>
 
 <title>Student Registration</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+		
+
 </head>
 <body>
+<div class="container">
+	
+	<div class="card">
+		
+		<div class="card-header bg-info text-white text-center"> 
+			
+			<h2>Student Registration Form</h2> 
+		
+		</div>
+		
+		<div class="card-body">
+				
+			<form th:action="@{/student/save}"  method="post">
 
-<h2>Student Registration Form</h2>
+			    Name :
+			    <input type="text" name="sName">
+			    <br><br>
 
-<form th:action="@{/student/save}"  method="post">
+			    Department :
+			    <input type="text" name="sDept">
+			    <br><br>
 
-    Name :
-    <input type="text" name="sName">
-    <br><br>
+			    Fee :
+			    <input type="number" name="sFee">
+			    <br><br>
 
-    Department :
-    <input type="text" name="sDept">
-    <br><br>
+			    <input type="submit" value="Save">
 
-    Fee :
-    <input type="number" name="sFee">
-    <br><br>
-
-    <input type="submit" value="Save">
-
-</form>
-
-<h3 th:text="${Msg}"></h3>
-
+			</form>
+			
+		</div>
+			
+		<div class="card-footer">
+			
+			<h3 th:text="${Msg}"></h3>
+			
+		</div>
+		
+	</div>
+	
+	</div>
+	
 </body>
 </html>

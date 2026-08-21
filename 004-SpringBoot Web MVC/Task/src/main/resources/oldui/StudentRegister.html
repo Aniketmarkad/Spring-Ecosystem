@@ -1,0 +1,31 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+<title>Student Registration</title>
+</head>
+<body>
+
+<h2>Student Registration Form</h2>
+
+<form th:action="@{/student/save}"  method="post">
+
+    Name :
+    <input type="text" name="sName">
+    <br><br>
+
+    Department :
+    <input type="text" name="sDept">
+    <br><br>
+
+    Fee :
+    <input type="number" name="sFee">
+    <br><br>
+
+    <input type="submit" value="Save">
+
+</form>
+
+<h3 th:text="${Msg}"></h3>
+
+</body>
+</html>

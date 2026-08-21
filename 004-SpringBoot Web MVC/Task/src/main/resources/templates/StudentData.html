@@ -1,28 +1,49 @@
 <html xmlns:th="https://www.thymeleaf.org/">
 	<head>
 		<title>WELCOME TO DATA PAGE</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+		
 	</head>
 	<body>
-		<table border="1">
-			<tr>
-				<th>ID</th>
-				<th>NAME</th>
-				<th>DEPT</th>
-				<th>FEES</th>
-				<th>opreations</th>
-			</tr>
-			<tr th:each="ob:${list}">
-				<td>[[${ob.Sid}]]</td>
-				<td>[[${ob.sName}]]</td>
-				<td>[[${ob.sDept}]]</td>
-				<td>[[${ob.sFee}]]</td>
+		<div class="container"><div>
+			
+			<div class="card">
 				
-				<td>
-					<a  th:href="@{/student/delete(id=${ob.Sid})}">DELETE</a> |<a th:href="@{/student/edit(id=${ob.Sid})}">EDIT</a>
-				</td>
-			</tr>
-		</table>
+				<div class="card-header bg-info text-white text-center"> <h2>STUDENT DATA PAGE</h2> </div>
+				
+				<div class="card-body">
+					
+					<table class="table table-hover">
+								<tr class="bg-info text-white">
+									<th>ID</th>
+									<th>NAME</th>
+									<th>DEPT</th>
+									<th>FEES</th>
+									<th>opreations</th>
+								</tr>
+								<tr th:each="ob:${list}">
+									<td>[[${ob.Sid}]]</td>
+									<td>[[${ob.sName}]]</td>
+									<td>[[${ob.sDept}]]</td>
+									<td>[[${ob.sFee}]]</td>
+									
+									<td>
+										<a  class="btn btn-danger" th:href="@{/student/delete(id=${ob.Sid})}">DELETE</a> |<a class="btn btn-warning"  th:href="@{/student/edit(id=${ob.Sid})}">EDIT</a>
+									</td>
+								</tr>
+							</table>
+					
+				</div>
+				
+				<div class="card-footer bg-success text-white text-center">
+					
+					<b>[[${message}]] </b> 
+					
+				</div>
+				
+			</div>
 		
-		<div> <bb>[[${message}]] </b> </div>
+		</div>
+		
 	</body>
 </html>
