@@ -1,0 +1,28 @@
+<html xmlns:th="https://www.thymeleaf.org/">
+	<head>
+		<title>WELCOME TO DATA PAGE</title>
+	</head>
+	<body>
+		<table border="1">
+			<tr>
+				<th>ID</th>
+				<th>NAME</th>
+				<th>DEPT</th>
+				<th>FEES</th>
+				<th>opreations</th>
+			</tr>
+			<tr th:each="ob:${list}">
+				<td>[[${ob.Sid}]]</td>
+				<td>[[${ob.sName}]]</td>
+				<td>[[${ob.sDept}]]</td>
+				<td>[[${ob.sFee}]]</td>
+				
+				<td>
+					<a  th:href="@{/student/delete(id=${ob.Sid})}">DELETE</a> |<a th:href="@{/student/edit(id=${ob.Sid})}">EDIT</a>
+				</td>
+			</tr>
+		</table>
+		
+		<div> <bb>[[${message}]] </b> </div>
+	</body>
+</html>
