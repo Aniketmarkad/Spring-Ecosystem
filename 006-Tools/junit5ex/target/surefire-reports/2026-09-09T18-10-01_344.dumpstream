@@ -1,5 +1,0 @@
-# Created at 2026-09-09T18:10:01.718
-Boot Manifest-JAR contains absolute paths in classpath 'D:\aniket\workpace\springboot_Rest\junit5ex\target\test-classes'
-Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
-'other' has different root
-
