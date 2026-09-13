@@ -1,0 +1,7 @@
+# Created at 2026-09-09T18:01:21.285
+TestEngine with ID 'junit-jupiter' encountered a critical issue during test discovery:
+
+(1) [ERROR] @AfterAll method 'public void com.aniket.test.TestEmployee.clearAll()' must be static unless the test class is annotated with @TestInstance(Lifecycle.PER_CLASS).
+    Source: MethodSource [className = 'com.aniket.test.TestEmployee', methodName = 'clearAll', methodParameterTypes = '']
+            at com.aniket.test.TestEmployee.clearAll(SourceFile:0)
+
