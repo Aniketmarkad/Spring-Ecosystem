@@ -1,0 +1,16 @@
+2026-09-14 14:33:59,995 : com.aniket.SpringBootLoggingExApplication : INFO --> logStarting : 
+2026-09-14 14:33:59,999 : com.aniket.SpringBootLoggingExApplication : INFO --> logStartupProfileInfo : 
+2026-09-14 14:34:01,398 : org.springframework.boot.tomcat.TomcatWebServer : INFO --> initialize : 
+2026-09-14 14:34:01,435 : org.apache.catalina.core.StandardService : INFO --> log : 
+2026-09-14 14:34:01,437 : org.apache.catalina.core.StandardEngine : INFO --> log : 
+2026-09-14 14:34:01,503 : org.springframework.boot.web.context.servlet.WebApplicationContextInitializer : INFO --> prepareWebApplicationContext : 
+2026-09-14 14:34:02,125 : org.springframework.boot.tomcat.TomcatWebServer : INFO --> start : 
+2026-09-14 14:34:02,135 : com.aniket.SpringBootLoggingExApplication : INFO --> logStarted : 
+2026-09-14 14:34:09,566 : org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : INFO --> log : 
+2026-09-14 14:34:09,568 : org.springframework.web.servlet.DispatcherServlet : INFO --> initServletBean : 
+2026-09-14 14:34:09,574 : org.springframework.web.servlet.DispatcherServlet : INFO --> initServletBean : 
+2026-09-14 14:34:09,655 : com.aniket.rest.GreetingsController : TRACE --> generateGreetings : 
+2026-09-14 14:34:09,658 : com.aniket.rest.GreetingsController : DEBUG --> generateGreetings : 
+2026-09-14 14:36:32,712 : org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : INFO --> shutdown : 
+2026-09-14 14:36:32,719 : org.springframework.boot.tomcat.GracefulShutdown : INFO --> shutDownGracefully : 
+2026-09-14 14:36:32,737 : org.springframework.boot.tomcat.GracefulShutdown : INFO --> doShutdown : 
