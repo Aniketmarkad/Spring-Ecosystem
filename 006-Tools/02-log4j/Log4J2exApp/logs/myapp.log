@@ -1,0 +1,6 @@
+2026-09-14 12:47:16,330 - com.aniket.Test2 [processData] -(TRACE) FROM TRACE METHOD 
+2026-09-14 12:47:16,333 - com.aniket.Test2 [processData] -(DEBUG) FROM DEBUG METHOD 
+2026-09-14 12:47:16,333 - com.aniket.Test2 [processData] -(INFO) FROM INFO METHOD 
+2026-09-14 12:47:16,333 - com.aniket.Test2 [processData] -(WARN) FROM WARN METHOD 
+2026-09-14 12:47:16,334 - com.aniket.Test2 [processData] -(ERROR) FROM ERROR METHOD 
+2026-09-14 12:47:16,334 - com.aniket.Test2 [processData] -(FATAL) FROM FATAL METHOD 
