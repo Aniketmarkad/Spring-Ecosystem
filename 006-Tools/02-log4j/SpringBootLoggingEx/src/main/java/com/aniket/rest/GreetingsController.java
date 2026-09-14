@@ -1,7 +1,7 @@
 package com.aniket.rest;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+//import org.slf4j.Logger;
+//import org.slf4j.LoggerFactory;
 //import org.apache.logging.log4j.LogManager;
 //import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,13 +11,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.aniket.service.IGreateService;
+import lombok.extern.slf4j.Slf4j;
 
 @RestController
+@Slf4j
 public class GreetingsController {
 
 	 
 	//private static final Logger log = LogManager.getLogger(GreetingsController.class);
-	private static final Logger log = LoggerFactory.getLogger(GreetingsController.class);
+	//private static final Logger log = LoggerFactory.getLogger(GreetingsController.class);
 	
 	    @Autowired
 	    private IGreateService service;
