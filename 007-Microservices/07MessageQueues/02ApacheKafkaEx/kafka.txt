@@ -1,0 +1,28 @@
+keep  kafka here and run using command on  cmd .
+
+1] Generate Cluster UUID
+
+\kafka_2.13-4.3.1\bin\windows> kafka-storage.bat random-uuid
+
+2] Format / Initialize KRaft Storage
+
+\kafka_2.13-4.3.1\bin\windows> kafka-storage.bat format --standalone -t 3l1g2zRQS12QymXumKKSGg -c ..\..\config\server.properties
+
+3] Start Kafka
+
+ \kafka_2.13-4.3.1\bin\windows> kafka-server-start.bat ..\..\config\server.properties
+
+4] Create topic (only if not already created):
+
+\kafka_2.13-4.3.1\bin\windows> kafka-topics.bat --create --topic my-topic --bootstrap-server localhost:9092
+
+5]start consumer
+\kafka_2.13-4.3.1\bin\windows> kafka-console-consumer.bat --topic my-topic --from-beginning --bootstrap-server localhost:9092
+
+6]start producer
+\kafka_2.13-4.3.1\bin\windows> kafka-console-producer.bat --topic my-topic --bootstrap-server localhost:9092  
+
+
+*Note := 1 and 2 for kafka cluster storage not evrytime once 
+	 4 topic create only not created
+	 5 & 6 just for check connection working fine of apache kafka
