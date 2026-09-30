@@ -1,4 +1,4 @@
-package com.app.raghu;
+package com.aniket;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
