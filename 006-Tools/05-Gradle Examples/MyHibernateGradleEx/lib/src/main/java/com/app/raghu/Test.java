@@ -1,4 +1,4 @@
-package com.app.raghu;
+package com.aniket;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
